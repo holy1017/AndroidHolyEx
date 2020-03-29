@@ -11,5 +11,6 @@ class sub01Activity : AppCompatActivity() {
         setContentView(R.layout.activity_sub01)
 
         Toast.makeText(getApplicationContext(),"sub01Activity", Toast.LENGTH_LONG)
+
     }
 }
