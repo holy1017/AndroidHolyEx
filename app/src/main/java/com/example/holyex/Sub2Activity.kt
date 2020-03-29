@@ -14,19 +14,19 @@ class Sub2Activity : AppCompatActivity(), View.OnTouchListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sub2)
 
-        Toast.makeText(applicationContext,"sub01Activity", Toast.LENGTH_LONG).show()
+        Toast.makeText(applicationContext,"sub02Activity", Toast.LENGTH_LONG).show()
 
         //터치 리스너
         //findViewById<Button>(R.id.btCenter).setOnTouchListener(this)
-        btCenter.setOnTouchListener(this)
+        btCenter02.setOnTouchListener(this)
     }
 
 //    private var offsetX = 0f
 //    private var offsetY = 0f
     private var locX = 0f
     private var locY = 0f
-    private var moveX = 0f
-    private var moveY = 0f
+//    private var moveX = 0f
+//    private var moveY = 0f
 
     override fun onTouch(v: View?, e: MotionEvent?): Boolean {
         //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -43,7 +43,7 @@ class Sub2Activity : AppCompatActivity(), View.OnTouchListener {
 
             // id
             when (v?.id) {
-                R.id.btCenter -> {
+                R.id.btCenter02 -> {
                     //Toast.makeText(applicationContext,"btCenter run" ,Toast.LENGTH_LONG).show()
 
                     when(e?.action) {
@@ -58,23 +58,44 @@ class Sub2Activity : AppCompatActivity(), View.OnTouchListener {
                             //offsetY=e.y+sub2.y
                             locX = e.rawX
                             locY =  e.rawY
-                            moveX = 0f
-                            moveY = 0f
+//                            moveX = 0f
+//                            moveY = 0f
+//                            locX = e.rawX-btCenter.x
+//                            locY =  e.rawY-btCenter.y
                         }
                         MotionEvent.ACTION_MOVE -> {
                         //    v.animate() .x(event.rawX + moveX) .y(event.rawY + moveY) .setDuration(0) .start()
                             //btCenter.text= "x:${e.rawX} ,\n y:${e.rawY} ,"
-                            moveX = e.rawX - locX
-                            moveY = e.rawY - locY
+//                            moveX = e.rawX - locX
+//                            moveY = e.rawY - locY
+//                            locX = e.rawX
+//                            locY =  e.rawY
+//                            btCenter.x+=moveX
+//                            btCenter.y+=moveY
+                            btCenter02.x+=e.rawX - locX
+                            btCenter02.y+=e.rawY - locY
                             locX = e.rawX
                             locY =  e.rawY
-                            btCenter.x+=moveX
-                            btCenter.y+=moveY
 
                             // pivotX 중심점
                             Log.v("holy","e / rawX:${e.rawX} , rawY:${e.rawY} , x:${e.x} , y:${e.y} " )
-                            Log.v("holy","bt / x:${btCenter.x} , y:${btCenter.y}  , px:${btCenter.pivotX} , py:${btCenter.pivotY}" )
+                            Log.v("holy","bt / x:${btCenter02.x} , y:${btCenter02.y}  , px:${btCenter02.pivotX} , py:${btCenter02.pivotY}" )
                             Log.v("holy","sub2 / x:${sub2.x} , y:${sub2.y}  , px:${sub2.pivotX} , py:${sub2.pivotY}" )
+//
+//                            val cl = findViewById<ConstraintLayout>(R.id.sub2)
+//                            val cs = ConstraintSet()
+//                           cs.clone(cl)
+//                           cs.setVerticalBias(R.id.btCenter, (btCenter.x+btCenter.pivotX)/sub2.width)
+//                           cs.setHorizontalBias(R.id.btCenter, (btCenter.y+btCenter.pivotY)/sub2.height)
+//                           cs.applyTo(cl)
+//
+                            //btCenter.set
+//                            btCenter.bias=(btCenter.x+btCenter.pivotX)/sub2.width
+//                            (btCenter.y+btCenter.pivotY)/sub2.height
+
+
+
+
                         }
                     }
 

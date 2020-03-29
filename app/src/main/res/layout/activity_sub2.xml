@@ -8,31 +8,32 @@
     tools:context=".Sub2Activity">
 
     <Button
-        android:id="@+id/btCenter"
+        android:id="@+id/btCenter02"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintVertical_bias="0.743" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/btCenter"
+        app:layout_constraintBottom_toTopOf="@+id/btCenter02"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btCenter" />
+        app:layout_constraintTop_toTopOf="@+id/btCenter02" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/btCenter"
+        app:layout_constraintBottom_toTopOf="@+id/btCenter02"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
@@ -40,33 +41,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/btCenter"
-        app:layout_constraintTop_toTopOf="@+id/btCenter" />
+        app:layout_constraintStart_toEndOf="@+id/btCenter02"
+        app:layout_constraintTop_toTopOf="@+id/btCenter02" />
 
     <TextView
         android:id="@+id/textView17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintEnd_toStartOf="@+id/btCenter"
-        app:layout_constraintTop_toBottomOf="@+id/btCenter" />
+        app:layout_constraintEnd_toStartOf="@+id/btCenter02"
+        app:layout_constraintTop_toBottomOf="@+id/btCenter02" />
 
     <TextView
         android:id="@+id/textView18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/btCenter"
-        app:layout_constraintStart_toStartOf="@+id/btCenter"
-        app:layout_constraintTop_toBottomOf="@+id/btCenter" />
+        app:layout_constraintEnd_toEndOf="@+id/btCenter02"
+        app:layout_constraintStart_toStartOf="@+id/btCenter02"
+        app:layout_constraintTop_toBottomOf="@+id/btCenter02" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/btCenter"
-        app:layout_constraintEnd_toStartOf="@+id/btCenter"
+        app:layout_constraintBottom_toTopOf="@+id/btCenter02"
+        app:layout_constraintEnd_toStartOf="@+id/btCenter02"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -74,9 +75,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/btCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/btCenter02"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/btCenter"
+        app:layout_constraintStart_toStartOf="@+id/btCenter02"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -84,25 +85,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintBottom_toBottomOf="@+id/btCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/btCenter02"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btCenter" />
+        app:layout_constraintTop_toTopOf="@+id/btCenter02" />
 
     <TextView
         android:id="@+id/textView22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/btCenter"
-        app:layout_constraintEnd_toStartOf="@+id/btCenter" />
+        app:layout_constraintBottom_toTopOf="@+id/btCenter02"
+        app:layout_constraintEnd_toStartOf="@+id/btCenter02" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/btCenter"
-        app:layout_constraintStart_toEndOf="@+id/btCenter" />
+        app:layout_constraintBottom_toTopOf="@+id/btCenter02"
+        app:layout_constraintStart_toEndOf="@+id/btCenter02" />
 
     <TextView
         android:id="@+id/textView31"

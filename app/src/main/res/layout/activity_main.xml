@@ -21,13 +21,13 @@
                 android:id="@+id/btEx01"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="ex01" />
+                android:text="XY이동" />
 
             <Button
                 android:id="@+id/btEx02"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="btEx02" />
+                android:text="XYConstraint" />
 
             <Button
                 android:id="@+id/btEx03"

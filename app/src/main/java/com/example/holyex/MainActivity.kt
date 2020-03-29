@@ -54,6 +54,10 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
                     Toast.makeText(applicationContext,"btEx01 run" ,Toast.LENGTH_LONG).show()
                     startActivity(Intent(this,Sub2Activity::class.java))
                 }
+                R.id.btEx02 -> {
+                    Toast.makeText(applicationContext,"btEx02 run" ,Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this,Sub3Activity::class.java))
+                }
             }
         }
     }
