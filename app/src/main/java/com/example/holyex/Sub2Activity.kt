@@ -1,5 +1,6 @@
 package com.example.holyex
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -28,8 +29,8 @@ class Sub2Activity : AppCompatActivity(), View.OnTouchListener {
 //    private var moveX = 0f
 //    private var moveY = 0f
 
+    @SuppressLint("ClickableViewAccessibility")
     override fun onTouch(v: View?, e: MotionEvent?): Boolean {
-        //TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 
         if (v != null || e != null) {
 

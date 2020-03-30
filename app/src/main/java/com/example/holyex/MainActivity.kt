@@ -25,14 +25,17 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         //findViewById<TextView>(R.id.text01).text = "글자여 바뀌어라!"
         text01.text = "글자여 바뀌어라!"
 
+        initListener()
+    }
+
+    private fun initListener() {
         // 리스너 설정
         //findViewById<Button>(R.id.btEx01).setOnClickListener(this)
         //findViewById<Button>(R.id.btEx02).setOnClickListener(this)
         btEx01.setOnClickListener(this)
         btEx02.setOnClickListener(this)
+        btEx03.setOnClickListener(this)
     }
-
-
 
     // 리스너 구현
     override fun onClick(v: View?) {
@@ -57,6 +60,10 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
                 R.id.btEx02 -> {
                     Toast.makeText(applicationContext,"btEx02 run" ,Toast.LENGTH_LONG).show()
                     startActivity(Intent(this,Sub3Activity::class.java))
+                }
+                R.id.btEx03 -> {
+                    Toast.makeText(applicationContext,"btEx03 run" ,Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this,Sub4Activity::class.java))
                 }
             }
         }
