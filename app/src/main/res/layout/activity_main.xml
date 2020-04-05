@@ -62,6 +62,12 @@
                 android:layout_height="wrap_content"
                 android:text="btEx07" />
 
+            <Button
+                android:id="@+id/btEx08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="btEx08" />
+
             <TextView
                 android:id="@+id/text01"
                 android:layout_width="match_parent"
