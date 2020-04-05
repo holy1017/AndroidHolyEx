@@ -40,13 +40,26 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
         // 리스너 설정
         //findViewById<Button>(R.id.btEx01).setOnClickListener(this)
         //findViewById<Button>(R.id.btEx02).setOnClickListener(this)
-        btEx01.setOnClickListener(this)
-        btEx02.setOnClickListener(this)
-        btEx03.setOnClickListener(this)
-        btEx04.setOnClickListener(this)
-        btEx05.setOnClickListener(this)
-        btEx06.setOnClickListener(this)
 
+       //btEx01.setOnClickListener(this)
+       //btEx02.setOnClickListener(this)
+       //btEx03.setOnClickListener(this)
+       //btEx04.setOnClickListener(this)
+       //btEx05.setOnClickListener(this)
+       //btEx06.setOnClickListener(this)
+
+        val buttons = arrayOf(
+            btEx01
+            ,btEx06
+            ,btEx02
+            ,btEx03
+            ,btEx04
+            ,btEx05
+            ,btEx07
+        )
+        for (i in buttons){
+            i.setOnClickListener(this)
+        }
     }
 
     // 리스너 구현
@@ -88,6 +101,10 @@ class MainActivity : AppCompatActivity() , View.OnClickListener {
                 R.id.btEx06 -> {
                     //Toast.makeText(applicationContext,"btEx06 run" ,Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this,Sub6Activity::class.java))
+                }
+                R.id.btEx07 -> {
+                    //Toast.makeText(applicationContext,"btEx06 run" ,Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this,Sub7Activity::class.java))
                 }
             }
         }
