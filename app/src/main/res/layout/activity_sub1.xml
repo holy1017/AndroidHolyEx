@@ -5,7 +5,7 @@
     android:id="@+id/sub2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Sub2Activity">
+    tools:context=".Sub1Activity">
 
     <Button
         android:id="@+id/btCenter02"

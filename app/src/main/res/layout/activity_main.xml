@@ -7,15 +7,18 @@
     tools:context=".MainActivity">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="193dp">
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/linearList"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <Button
                 android:id="@+id/btEx01"
@@ -40,6 +43,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="btEx04" />
+
+            <Button
+                android:id="@+id/btEx05"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="btEx05" />
+
+            <Button
+                android:id="@+id/btEx06"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="btEx06" />
 
             <TextView
                 android:id="@+id/text01"

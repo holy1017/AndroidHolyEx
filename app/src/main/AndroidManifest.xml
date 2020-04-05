@@ -9,9 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Sub4Activity"></activity>
+        <activity android:name=".Sub6Activity"></activity>
+        <activity android:name=".Sub5Activity" />
+        <activity android:name=".Sub4Activity" />
         <activity android:name=".Sub3Activity" />
         <activity android:name=".Sub2Activity" />
+        <activity android:name=".Sub1Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

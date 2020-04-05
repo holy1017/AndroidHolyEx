@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 
-class Sub4Activity : AppCompatActivity() {
+class Sub5Activity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sub4)
+        setContentView(R.layout.activity_sub5)
 
         Toast.makeText(applicationContext,this.toString(), Toast.LENGTH_SHORT).show()
     }
